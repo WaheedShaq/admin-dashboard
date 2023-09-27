@@ -13,7 +13,7 @@ body {
 }
 
 .sidebar {
-  background: skyblue;
+  background-color: #0ea5e9;
   height: 100vh;
   color: white;
 }
@@ -155,9 +155,10 @@ h4 {
 /* PROJECTS SECTION */
 
 .content {
-  background-color: #d4d4d4;
+  background-color: skyblue;
   display: grid;
-  grid-template-columns: 70% 30%;
+  /* grid-template-columns: 70% 30%; */
+  grid-template-columns: 1fr;
 }
 
 .cards {
@@ -171,8 +172,44 @@ h4 {
 }
 .card {
   background-color: white;
-  border-left: 3px solid #facc15;
+  border-left: 4px solid #facc15;
   border-radius: 10px;
-  width: 80%;
+  width: 70%;
+  height: 150px;
   margin: 30px 0px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  box-shadow: -1px 7px 17px -1px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: -1px 7px 17px -1px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: -1px 7px 17px -1px rgba(0, 0, 0, 0.81);
+}
+
+.project-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  gap: 10px;
+  cursor: pointer;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #737373;
+  margin: 10px 0px;
+}
+
+.your-projects {
+  font-size: 25px;
+  margin-top: 8px;
+  margin-left: 30px;
+  color: #0ea5e9;
 }
